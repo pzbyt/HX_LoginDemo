@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lhc-5k-1aj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9cz-c4-W0V">
+            <objects>
+                <navigationController id="Lhc-5k-1aj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pvl-FC-3fb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CeB-iS-q5Y" kind="relationship" relationship="rootViewController" id="lrE-Jp-9rE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Obm-nc-Kh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-442" y="158"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="z5Z-l6-s42">
+            <objects>
+                <viewController id="CeB-iS-q5Y" customClass="HX_MainController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ydr-sL-Nbh"/>
+                        <viewControllerLayoutGuide type="bottom" id="CRM-5Y-yJG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GdF-3V-mTr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击屏幕登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9G-NZ-WfD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="f7S-zA-tTF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R9G-NZ-WfD" firstAttribute="leading" secondItem="GdF-3V-mTr" secondAttribute="leadingMargin" constant="-16" id="98g-Tv-ItB"/>
+                            <constraint firstItem="R9G-NZ-WfD" firstAttribute="top" secondItem="Ydr-sL-Nbh" secondAttribute="bottom" id="FtR-T6-40n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R9G-NZ-WfD" secondAttribute="trailing" constant="-16" id="XIN-h3-D8b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="ixB-DB-HkA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aE8-D7-5qW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280.80000000000001" y="157.87106446776613"/>
+        </scene>
+    </scenes>
+</document>

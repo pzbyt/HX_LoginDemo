@@ -1,0 +1,20 @@
+//
+//  Const.pch
+//  HX_LoginDemo
+//
+//  Created by 彭章博 on 17/2/16.
+//  Copyright © 2017年 彭章博. All rights reserved.
+//
+
+#ifndef Const_pch
+#define Const_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//只放大iphone6p
+#define DeviceSize [UIScreen mainScreen].bounds.size
+
+#define autoSizeScaleX_Only6P (DeviceSize.width>=375?(DeviceSize.width/375):1)
+
+#define autoSizeScaleH_Only6P (DeviceSize.height>=667?(DeviceSize.height/667):1)
+#endif /* Const_pch */
